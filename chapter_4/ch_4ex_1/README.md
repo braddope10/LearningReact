@@ -14,4 +14,9 @@ In stylingVowels2.html you will:
 
     - Find a better way to style a specific component by giving it a className attribute and assigning the value to "letter"
     - Create a CSS selector for letter and specify everything within the style tag
-    
+
+In stylingTheReactWay.html you will:
+
+    - Learn how to style a component the REACT way
+    - Create an object that contains all the styling
+    - Invoke the object within the specific div tag's style attribute using curly braces
