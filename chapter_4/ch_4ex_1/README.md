@@ -20,3 +20,9 @@ In stylingTheReactWay.html you will:
     - Learn how to style a component the REACT way
     - Create an object that contains all the styling
     - Invoke the object within the specific div tag's style attribute using curly braces
+
+In customBGC.html you will:
+
+    - Change the background color of each individual letter
+    - Add "bgcolor" attribute to ReactDOM.render method and specify some colors
+    - Use "this" property within the letterStyle object and set the value of backgroundColor to this.props.bgcolor
