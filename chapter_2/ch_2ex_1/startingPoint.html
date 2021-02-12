@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> React! React! React!</title>
+
+    <!-- Let's add a reference to a React library -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <!-- These two lines bring in both the core React library and the various things React needs to work with the DOM -->
+
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <!-- The last line above adds a reference to the Babel JavaScript compiler (http://babeljs.io/) -->
+    <!-- Babel does many cool things, but the one we care about is its capability to turn JSX into JavaScript -->
+
+    <!-- Add styling using CSS -->
+    <style>
+        #container {
+            padding: 50px;
+            background-color: #EEE;
+        }
+
+        #container h1 {
+            font-size: 144px;
+            font-family: sans-serif;
+            color: #0080A8;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Create a separate element that you will treat as a new root element -->
+    <div id="container"></div>
+
+    <!-- Designate this script block as something that Babel can work its magic on. -->
+    <!-- You do that by setting the type attribute on the script tag of a value of text/babel -->
+    <script type="text/babel">
+        let destination = document.querySelector("#container");
+        
+        // Display name on screen
+        ReactDOM.render(
+            <h1>Bradley Lopez</h1>,
+            destination
+        );
+    </script>
+</body>
+
+</html>
